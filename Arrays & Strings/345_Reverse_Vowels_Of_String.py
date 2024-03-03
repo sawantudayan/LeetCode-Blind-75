@@ -22,7 +22,7 @@ def reverseVowels(self, s: str) -> str:
     s = list(s)
     for i in range(len(s)):
         if (s[i] in "aeiouAEIOU"):
-                res.append(i)
+            res.append(i)
     for i in range(len(res)//2):
-            s[res[i]], s[res[-i-1]] = s[res[-i-1]],s[res[i]]
+        s[res[i]], s[res[-i-1]] = s[res[-i-1]],s[res[i]]
     return "".join(s)
