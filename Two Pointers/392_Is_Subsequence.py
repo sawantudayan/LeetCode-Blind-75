@@ -6,7 +6,7 @@ def isSubsequence(self, s:str, t:str) -> bool:
     The function returns True if all characters in 's' are matched, and False otherwise. 
     
     
-    Time complexity = O(m+n), where 'm+n' is the length of the strings 't'.
+    Time complexity = O(m+n), where 'm+n' is the length of the strings.
     Space  complexity = O(1).
     """
     i = 0
