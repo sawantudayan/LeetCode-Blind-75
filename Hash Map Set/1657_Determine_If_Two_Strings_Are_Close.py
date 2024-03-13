@@ -2,10 +2,10 @@ from collections import Counter
 
 def closeStrings(word1: str, word2: str) -> bool:
    """
-   This function checks if two given strings are close strings or not.\n
-   Two strings are said to be close if they contain the same letters in their integer counts, up to rearrangement, and have the same length.\n
+   This function checks if two given strings are close strings or not.
+   Two strings are said to be close if they contain the same letters in their integer counts, up to rearrangement, and have the same length.
    
-   Time Complexity: O(n log n) due to the sorting operation\n
+   Time Complexity: O(n log n) due to the sorting operation
    Space Complexity: O(n) as we are storing the counts of characters in the string.
    """
    cnt1 = Counter(word1)
