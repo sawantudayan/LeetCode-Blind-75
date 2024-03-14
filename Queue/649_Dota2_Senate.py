@@ -13,8 +13,8 @@ def predictPartyVictory(self, senate: str) -> str:
     d_arr = [j for j in range(len(senate)) if senate[j] == 'D']
     
     while r_arr and d_arr:
-        r = r_arr.pop()
-        d = d_arr.pop()
+        r = r_arr.pop(0)
+        d = d_arr.pop(0)
         if r<d:
             r_arr.append(n+r)
         else:
