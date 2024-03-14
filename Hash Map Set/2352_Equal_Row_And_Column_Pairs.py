@@ -11,7 +11,7 @@ def equalPairs(self, grid: List[List[int]]) -> int:
 
     Time Complexity: O(n^3), the function has three nested loops, with two of them iterating up to n (for rows and columns), and the third one iterating up to n^2 (for all valid elements in the rows and columns). Therefore, the time complexity is O(n^3).
 
-    Space Complexity: O(1), the function does not use any additional space that scales with the size of the input, hence
+    Space Complexity: O(1), the function does not use any additional space that scales with the size of the input
     """
     n = len(grid)
     ans = 0
