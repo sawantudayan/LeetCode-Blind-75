@@ -15,20 +15,17 @@ def findCircleNum(self, isConnected: List[List[int]]) -> int:
     Time Complexity : O(n^2)
     Space Complexity : O(n)
     """
-    def dfs(i : int) -> None:
-        """
-        A helper function for DFS traversal of the graph.
-        Marks the current node and its adjacent nodes as visited.
-
-        Parameters:
-        i (int): The current node to be visited.
-        """
-        vis[i] = True
-        for j, x in enumerate(isConnected[i]):
-            if not vis[j] and x:
-                dfs(j)
+    def dfs(i: int):
+            vis[i] = True
+            for j, x in enumerate(isConnected[i]):
+                if not vis[j] and x:
+                    dfs(j)
 
     n = len(isConnected)
     vis = [False] * n
     ans = 0
-    for
+    for i in range(n):
+        if not vis[i]:
+            dfs(i)
+            ans += 1
+    return ans
