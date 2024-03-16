@@ -9,8 +9,8 @@ def minReorder(self, n: int, connections: List[List[int]]) -> int:
     Returns:
     int: The minimum number of rewirings needed.
     
-    Time Complexity : O(m), where m is the number of the edges
-    Space Complexity: O(n), since the active call frames on the stack is 'n'
+    Time Complexity : O(m), where m is the number of the edges.
+    Space Complexity: O(n), since the active call frames on the stack is 'n'.
     """
     def dfs(a: int, fa: int) -> int:
         """
