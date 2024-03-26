@@ -12,7 +12,7 @@ class Solution:
         
         
         Time Complexity : O(m*n), where m and n are the number of rows and coluns in the input grid
-        Space  Complexity: O(m*n), due to @d array 'f' that stores the number of unique paths to rach each cell.
+        Space  Complexity: O(m*n), due to array 'f' that stores the number of unique paths to rach each cell.
         
         """
         f = [[1] * n for _ in range(m)]
